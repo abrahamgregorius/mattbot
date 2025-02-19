@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import Container from "../components/Container";
 import Main from "../components/Main";
+import { apiKey } from "../config/api"
 
 export default function Home() {
   const [prompt, setPrompt] = useState("");
@@ -10,7 +11,7 @@ export default function Home() {
   const handleChange = async (e) => {
     e.preventDefault();
     const res = await fetch(
-      "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBNoA6ix8Gdlk3GEsT-1CiDElEjj6DQPrU",
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`,
       {
         method: "POST",
         headers: {
