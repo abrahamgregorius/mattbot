@@ -10,7 +10,7 @@ export default function Home() {
   const handleChange = async (e) => {
     e.preventDefault();
     const res = await fetch(
-      "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyCWs31ECxHFlal-G5bXUGjDWAH7416MWqc",
+      "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBNoA6ix8Gdlk3GEsT-1CiDElEjj6DQPrU",
       {
         method: "POST",
         headers: {
